@@ -6,21 +6,16 @@ Welcome! This is the README for my website, which is available under the GNU GPL
 
 ## Contents
 
-- [Demo](#demo)
-- [Screenshots](#screenshots)
+- [Website](#Website)
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contact](#contact)
 
-## Demo
+## Website
 
-[Live Demo](https://riviox.is-a.dev)
-
-## Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
+[Website](https://riviox.is-a.dev)
 
 ## Technologies
 
@@ -30,7 +25,7 @@ Welcome! This is the README for my website, which is available under the GNU GPL
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/your_username/repository.git`
+1. Clone this repository: `git clone https://github.com/RivioxGaming/riviox.is-a.dev.git`
 2. Navigate to the project folder: `cd repository`
 
 ## Usage
@@ -43,7 +38,7 @@ This website is available under the GNU GPL v3.0 license. The full license text 
 
 ## Contact
 
-If you have questions, feedback, or suggestions, feel free to reach out to me through [Discord](https://discord.com/), or via [GitHub Issues](https://github.com/RivioxGaming/riviox.is-a.dev/issues).
+If you have questions, feedback, or suggestions, feel free to reach out to me through [Discord](https://discord.gg/8E2a94BSBX), or via [GitHub Issues](https://github.com/RivioxGaming/riviox.is-a.dev/issues).
 
 ---
 
