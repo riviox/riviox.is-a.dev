@@ -18,10 +18,6 @@ Welcome! This is the README for my website, which is available under the GNU GPL
 
 [Live Demo](https://riviox.is-a.dev)
 
-## Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
-
 ## Technologies
 
 - HTML
