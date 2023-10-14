@@ -53,9 +53,60 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh; /* Ustaw wysokość na 90% wysokości widoku, aby wyśrodkować zawartość */
+    height: 90vh;
 }
 
 #stats {
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .nav {
+      height: 7vh;
+      border-radius: 0.5rem;
+
+    }
+    #logo {
+        height: 6.5vh;
+        border-radius: 0.5rem;
+    }
+  
+    #bigtext {
+      font-size: 30px;
+    }
+  
+    #about {
+      padding: 10px;
+      margin-right: 10px;
+    }
+    
+    .main {
+        scale: 0.9;
+        display: grid;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      height: 5vh;
+      border-radius: 0.5rem;
+    }
+
+    #logo {
+        height: 4.5vh;
+        border-radius: 0.25rem;
+    }
+  
+    #bigtext {
+      font-size: 20px;
+    }
+  
+    #about {
+      padding: 5px;
+      margin-right: 5px;
+    }
+    .main {
+        scale: 0.9;
+        display: grid;
+    }
+  }
