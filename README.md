@@ -1,4 +1,4 @@
-# Your Website Name
+# riviox.is-a.dev
 
 ## Description
 
@@ -15,7 +15,11 @@ Welcome! This is the README for my website, which is available under the GNU GPL
 
 ## Website
 
-[Website](https://riviox.is-a.dev)
+[Live Demo](https://riviox.is-a.dev)
+
+## Screenshots
+
+![Screenshot 1](screenshots/screenshot1.png)
 
 ## Technologies
 
