@@ -33,7 +33,7 @@ li {
 
 #about {
     width: fit-content;
-    margin-top: 10px;
+    height: 8.312rem;
     border-radius: 1rem;
     padding-left: 15px;
     padding-right: 15px;
@@ -41,6 +41,9 @@ li {
     padding-bottom: 15px;
     background-color: #445;
     margin-right: 15px;
+    border-width: 1px;
+    border-style: groove;
+    border-color: white;
 }
 
 #svc {
@@ -58,6 +61,8 @@ li {
 
 #stats {
     margin-top: 10px;
+    height: 156px;
+    margin-top: -6px;
 }
 
 @media (max-width: 768px) {
@@ -110,3 +115,7 @@ li {
         display: grid;
     }
   }
+
+#stats {
+  border-radius: 15px;
+}
