@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyFPS</title>
+    <link rel="stylesheet" href="galaxyfps.css">
+    <link rel="stylesheet" href="assets/galaxyfps.css">
+    <meta name="description" content="FPS Booster written in python">
+    <meta name="keywords" content="FPS, BOOST">
+    <meta name="author" content=".riviox">
+</head>
+<body>
+    <main>
+        <div class="centerblock">
+            <div id="ascii"><pre>
+▄████  ▄▄▄       ██▓    ▄▄▄      ▒██   ██▒▓██   ██▓     █████▒██▓███    ██████ 
+██▒ ▀█▒▒████▄    ▓██▒   ▒████▄    ▒▒ █ █ ▒░ ▒██  ██▒   ▓██   ▒▓██░  ██▒▒██    ▒ 
+▒██░▄▄▄░▒██  ▀█▄  ▒██░   ▒██  ▀█▄  ░░  █   ░  ▒██ ██░   ▒████ ░▓██░ ██▓▒░ ▓██▄   
+░▓█  ██▓░██▄▄▄▄██ ▒██░   ░██▄▄▄▄██  ░ █ █ ▒   ░ ▐██▓░   ░▓█▒  ░▒██▄█▓▒ ▒  ▒   ██▒
+░▒▓███▀▒ ▓█   ▓██▒░██████▒▓█   ▓██▒▒██▒ ▒██▒  ░ ██▒▓░   ░▒█░   ▒██▒ ░  ░▒██████▒▒
+░▒   ▒  ▒▒   ▓▒█░░ ▒░▓  ░▒▒   ▓▒█░▒▒ ░ ░▓ ░   ██▒▒▒     ▒ ░   ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░
+░   ░   ▒   ▒▒ ░░ ░ ▒  ░ ▒   ▒▒ ░░░   ░▒ ░ ▓██ ░▒░     ░     ░▒ ░     ░ ░▒  ░ ░
+░ ░   ░   ░   ▒     ░ ░    ░   ▒    ░    ░   ▒ ▒ ░░      ░ ░   ░░       ░  ░  ░  
+░       ░  ░    ░  ░     ░  ░ ░    ░   ░ ░                              ░  
+░ ░                                 
+                
+            </pre></div>
+        </div>
+        <div class="pics">
+            <!-- <img src="pics/admin.png"> -->
+            <img src="pics/ui.png">
+            <span class="textpic">FPS Booster written in python.<br>Latest version: <span id="version"></span><br>Get it from <span id="fancy"><a href="https://github.com/RivioxGaming/GalaxyFPS">GitHub</a></span>
+        </div>
+    </main>
+    <script>
+        fetch('https://raw.githubusercontent.com/RivioxGaming/GalaxyFPS/main/version')
+            .then(response => response.text())
+            .then(ver => {
+                document.getElementById('version').innerText = ver;
+            })
+            .catch(error => {
+                console.log('Wystąpił błąd:', error);
+            });
+    </script>
+</body>
+</html>
