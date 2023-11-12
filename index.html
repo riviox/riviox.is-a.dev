@@ -1,49 +1,77 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="leave-ascii-in-issues!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=".riviox's website">
-    <meta name="keywords" content="Hello, World!">
-    <meta name="author" content=".riviox">
-    <link rel="stylesheet" href="assets/styles.css">
     <title>.riviox</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #container {
+            text-align: center;
+            background-color: #242424;
+            padding: 10px;
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        #avatar {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #3d3d3d;
+            padding: 5px;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+
+        a:hover {
+            background-color: #515beb;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #container {
+                width: 90vw;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li><img id="logo" src="assets/logo.png" alt="logo" onclick="huh()"></li>
-            <li><span id="bigtext">Riviox</span></li>
-        </ul>
+
+    <div id="container">
+        <img src="https://cdn.discordapp.com/avatars/906196365460258906/0cad9f7c734e5471169c49deabb050b7.png" id="avatar" alt="Avatar Discord">
+        <h1>.riviox</h1>
+        <p>A human, homo sapiens.</p>
+        <p>Nationality - Poland</p>
+        <p>Python developer</p>
+        <h1><i class="bi bi-github"></i> Github</h1>
+        <p>My Github - <a href="https://github.com/RivioxGaming">RivioxGaming</a></p>
+        <p>GalaxyFPS - <a href="https://github.com/RivioxGaming/GalaxyFPS">RivioxGaming/GalaxyFPS</a></p>
+        <h1><i class="bi bi-discord"></i> Discord</h1>
+        <p><a href="https://discord.gg/YqM85c5K">Riviox's Community</a></p>
+        <p><a href="https://discord.gg/zZyfZnNh">GalaxyFPS</a></p>
     </div>
-    <div class="main">
-        <div id="about">
-            <div id="svc">Discord</div>
-            <div id="username"><span id="text">Username: </span>.riviox</div>
-            <div id="id"><span id="text">ID: </span>906196365460258906</div>
-            <div id="id"><span id="text">Date Joined: </span>05.11.2021</div>
-            <div id="lnk"><span id="text">Link: </span><a href="https://discord.gg/8E2a94BSBX">Here</a></div>
-        </div>
-        <div id="about">
-            <div id="svc">YouTube</div>
-            <div id="username"><span id="text">Username: </span>Riviox</div>
-            <div id="id"><span id="text">ID: </span>UC_M-joF3U_bYYQGt8ugemeg</div>
-            <div id="dj"><span id="text">Date Joined: </span>10.01.2021</div>
-            <div id="lnk"><span id="text">Link: </span><a href="https://youtube.com/@Riviox">Here</a></div>
-        </div>
-        <div id="about">
-            <div id="svc">GitHub</div>
-            <div id="username"><span id="text">Username: </span>RivioxGaming</div>
-            <div id="id"><span id="text">ID: </span>N/A</div>
-            <div id="dj"><span id="text">Date Joined: </span>10.01.2021</div>
-            <div id="lnk"><span id="text">Link: </span><a href="https://github.com/RivioxGaming">Here</a></div>
-        </div>
-        <br>
-        <div id="stats">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&bg_color=445&hide_border=false&text_color=999&border_radius=15">
-        </div>
-    </div>
-    <footer></footer>
-    <script src="js/tools.js"></script>
+
 </body>
 </html>
