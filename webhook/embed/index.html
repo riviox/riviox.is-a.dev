@@ -148,22 +148,26 @@
     }
 
     .back {
-          background-color: #ffa600;
-          color: #ffffff;
-          padding: 10px 15px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-    
-        .back:hover {
-          background-color: #cf8700;
-        }
+      background-color: #ffa600;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-        a {
-            color: white;
-            text-decoration: none;
-        }
+    .back:hover {
+      background-color: #cf8700;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #textpreview {
+      font-size: medium;
+    }
 
   </style>
 </head>
@@ -200,7 +204,8 @@
 
     <div class="preview-container">
       <div id="messagePreview">
-        <h3>Message Preview:</h3>
+      <h3>Message Preview:</h3>
+        <div id="textpreview"></div>
         <div id="embedPreview">
           <div id="embedColorPreview"></div>
           <h4 id="embedTitlePreview"></h4>
@@ -269,6 +274,10 @@
     document.getElementById("embedTitle").addEventListener("input", function(event) {
       updateEmbedPreview();
     });
+    
+    document.getElementById("message").addEventListener("input", function(event) {
+      updateEmbedPreview();
+    });
 
     document.getElementById("embedDescription").addEventListener("input", function(event) {
       updateEmbedPreview();
@@ -282,12 +291,15 @@
       const embedTitle = document.getElementById("embedTitle").value;
       const embedDescription = document.getElementById("embedDescription").value;
       const embedColor = document.getElementById("embedColor").value;
+      const message = document.getElementById("message").value;
 
+      const messagePreview = document.getElementById("textpreview");
       const embedTitlePreview = document.getElementById("embedTitlePreview");
       const embedDescriptionPreview = document.getElementById("embedDescriptionPreview");
       const embedColorPreview = document.getElementById("embedColorPreview");
       const embedPreview = document.getElementById("embedPreview");
 
+      messagePreview.innerText = message;
       embedTitlePreview.innerText = embedTitle;
       embedTitlePreview.style.color = "#ffffff";
       embedDescriptionPreview.innerText = embedDescription;
