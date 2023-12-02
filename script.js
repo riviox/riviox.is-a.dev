@@ -45,7 +45,6 @@ function getUserInfo() {
                 <p>Global Name: ${data.global_name}</p>
                 <p>Badges: ${badgesHTML}</p>
                 <p>Created Account: ${new Date(data.created_at).toLocaleDateString()}</p>
-                <p>Status: ${statusMap[data.status]}</p>
             `;
         })
         .catch(error => {
@@ -55,3 +54,7 @@ function getUserInfo() {
 }
 
 document.addEventListener('DOMContentLoaded', getUserInfo);
+
+$(document).ready(function () {
+    $("#container").addClass("show");
+});
